@@ -1,0 +1,146 @@
+{
+ "osm_timestamp": "2026-11-11T13:04:01Z",
+ "lanelets": 10732,
+ "segments_total": 21944,
+ "segments_allowed": 4073,
+ "km_allowed": 226.6,
+ "km_lanelet": 203.7,
+ "km_bus_only_source": 22.1,
+ "km_both": 125.8,
+ "km_connectors": 2.2,
+ "connector_streets": [
+  "Eduard Wiiralti",
+  "Eerika tee",
+  "Jaan Tõnissoni",
+  "Jalaka",
+  "Jänese tee",
+  "Jõhvi — Tartu — Valga",
+  "Kalda tee",
+  "Kardla — Tüki",
+  "Karl Ernst von Baeri",
+  "Lubja",
+  "Männimetsa tee",
+  "Nõlvaku",
+  "Oti",
+  "Paju",
+  "Pallase pst",
+  "Puidu",
+  "Päevakivi",
+  "Soola",
+  "Talutare",
+  "Tiitsu",
+  "Tähe",
+  "Vasula tee",
+  "Vikerkaare",
+  "residential",
+  "tertiary",
+  "unclassified",
+  "Ülenurme ülesõit"
+ ],
+ "km_dropped_disconnected": 4.1,
+ "bus_only_ways_excluded_no_car_access": [
+  321034538,
+  364577420,
+  1068342565,
+  1068358591,
+  1396654118
+ ],
+ "turn_restriction_pairs": 58,
+ "destinations_total": 434,
+ "destinations_routable": 419,
+ "destinations_routable_in_city": 333,
+ "destinations_unroutable": [
+  {
+   "name": "Hotell Sophia",
+   "on_lanelet": false,
+   "lat": 58.356778,
+   "lon": 26.678717
+  },
+  {
+   "name": "Eesti Rahva Muuseum",
+   "on_lanelet": false,
+   "lat": 58.395543,
+   "lon": 26.74271
+  },
+  {
+   "name": "Vahi tööstuspark (linna sisenev)",
+   "on_lanelet": false,
+   "lat": 58.417599,
+   "lon": 26.721591
+  },
+  {
+   "name": "Savioja (linna sisenev)",
+   "on_lanelet": false,
+   "lat": 58.415722,
+   "lon": 26.725266
+  },
+  {
+   "name": "Savioja",
+   "on_lanelet": false,
+   "lat": 58.415809,
+   "lon": 26.72536
+  },
+  {
+   "name": "Savimäe (linna sisenev)",
+   "on_lanelet": false,
+   "lat": 58.414109,
+   "lon": 26.71911
+  },
+  {
+   "name": "Savimäe",
+   "on_lanelet": false,
+   "lat": 58.414076,
+   "lon": 26.718932
+  },
+  {
+   "name": "Vahipargi (linna sisenev)",
+   "on_lanelet": false,
+   "lat": 58.412578,
+   "lon": 26.717874
+  },
+  {
+   "name": "Vahipargi",
+   "on_lanelet": false,
+   "lat": 58.41242,
+   "lon": 26.718015
+  },
+  {
+   "name": "Mõisa puiestee",
+   "on_lanelet": false,
+   "lat": 58.406364,
+   "lon": 26.721162
+  },
+  {
+   "name": "Mõisa puiestee (linna sisenev)",
+   "on_lanelet": false,
+   "lat": 58.407009,
+   "lon": 26.720836
+  },
+  {
+   "name": "Vahi tööstuspark (Lõpp-peatus)",
+   "on_lanelet": false,
+   "lat": 58.417601,
+   "lon": 26.721628
+  },
+  {
+   "name": "Tõrvandi",
+   "on_lanelet": false,
+   "lat": 58.322301,
+   "lon": 26.709006
+  },
+  {
+   "name": "Tõrvandi (Lõpp-peatus)",
+   "on_lanelet": false,
+   "lat": 58.322311,
+   "lon": 26.708997
+  },
+  {
+   "name": "Päevakivi (Lõpp-peatus)",
+   "on_lanelet": false,
+   "lat": 58.347524,
+   "lon": 26.686717
+  }
+ ],
+ "heading_convention": "compass",
+ "destination_headings_from_lanelet": 345
+}

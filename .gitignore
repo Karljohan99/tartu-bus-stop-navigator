@@ -1,0 +1,7 @@
+# downloaded OSM extract and build by-products (regenerate with build/fetch_osm.sh + build/build_graph.py)
+raw/
+build/debug_segments.geojson
+# self-signed certificate created by serve.sh
+build/*.pem
+node_modules/
+__pycache__/
