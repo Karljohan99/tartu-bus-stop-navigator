@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tartu Bus Stop Navigator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0b6e4f">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="map"></div>
+
+<!-- next manoeuvre -->
+<div id="banner" hidden>
+  <div id="arrow"></div>
+  <div id="bannerText">
+    <div id="stepDist">–</div>
+    <div id="stepName"></div>
+  </div>
+</div>
+
+<div id="toast" hidden></div>
+
+<button id="cityBtn" class="fab" hidden aria-label="City limits only on/off"></button>
+<button id="muteBtn" class="fab" hidden aria-label="Voice on/off"></button>
+<button id="recenter" class="fab" hidden aria-label="Re-centre map">
+  <svg viewBox="0 0 24 24" width="30" height="30"><path d="M12 2 4.5 20.3l.7.7L12 18l6.8 3 .7-.7z" fill="currentColor"/></svg>
+</button>
+
+<!-- trip summary + controls -->
+<div id="bottom" hidden>
+  <div id="trip">
+    <div id="destName">–</div>
+    <div id="tripMeta"><span id="remDist">–</span><span class="dot">·</span><span id="remTime">–</span><span class="dot eta">·</span><span id="eta" class="eta">–</span></div>
+  </div>
+  <div id="controls">
+    <button id="nextBtn" class="primary">New stop</button>
+  </div>
+</div>
+
+<!-- start / arrived overlay -->
+<div id="overlay">
+  <div id="card">
+    <h1 id="ovTitle">Tartu Bus Stop Navigator</h1>
+    <p id="ovText">Routes you from where you are to a random bus stop, using only streets that are in the lanelet2 map or that Tartu city buses drive on.</p>
+    <label id="cityOpt" class="opt"><input type="checkbox" id="cityChk"><span class="switch"></span><span>Only stops within Tartu city limits <small id="cityCount"></small></span></label>
+    <button id="startBtn" class="primary big">Start</button>
+    <div id="legend">
+      <span><i class="sw ll"></i>lanelet2 map</span>
+      <span><i class="sw bus"></i>bus route only</span>
+      <span><i class="sw gap"></i>connector</span>
+    </div>
+    <p id="ovStats"></p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="router.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
